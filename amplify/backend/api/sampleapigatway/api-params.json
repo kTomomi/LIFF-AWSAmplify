@@ -1,0 +1,92 @@
+{
+    "paths": [
+        {
+            "name": "/menus",
+            "lambdaFunction": "menusLambada",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        },
+        {
+            "name": "/items",
+            "lambdaFunction": "samplelumbda",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        },
+        {
+            "name": "/users",
+            "lambdaFunction": "lineamplifyproject72684dab",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "sampleapigatway",
+    "apiName": "sampleapigatway",
+    "functionArns": [
+        {
+            "lambdaFunction": "menusLambada"
+        },
+        {
+            "lambdaFunction": "samplelumbda"
+        },
+        {
+            "lambdaFunction": "lineamplifyproject72684dab"
+        }
+    ],
+    "privacy": {
+        "auth": 3,
+        "unauth": 0,
+        "authRoleName": "amplify-lineamplifyproject-test-125312-authRole",
+        "unAuthRoleName": "amplify-lineamplifyproject-test-125312-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "menusLambada",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "samplelumbda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "lineamplifyproject72684dab",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "83847a60"
+}

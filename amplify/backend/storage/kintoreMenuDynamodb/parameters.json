@@ -1,0 +1,5 @@
+{
+    "tableName": "kintoreMenuDb",
+    "partitionKeyName": "id",
+    "partitionKeyType": "N"
+}
